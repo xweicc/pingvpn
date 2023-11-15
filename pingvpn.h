@@ -26,7 +26,7 @@
 #include <net/tcp.h>
 #include <net/ip.h>
 
-#include "pingvpn_public.h"
+#include "comm.h"
 
 #define PINGVPN_HEAD_SIZE 32	//iph(20)+icmph(8)+pth(4)
 #define SKB_MAX_HEAD_LEN 56	//eth(14+2)+iph(20)+icmph(8)+ppph(8)+pth(4)

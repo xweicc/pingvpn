@@ -17,7 +17,7 @@ typedef unsigned int __u32;
 typedef unsigned short __u16;
 typedef unsigned char __u8;
 
-#include "pingvpn_public.h"
+#include "comm.h"
 
 #define streq(s1,s2) (!strcmp(s1, s2))
 

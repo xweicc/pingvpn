@@ -1011,7 +1011,13 @@ int pingvpn_opt_get(void   *user, int len)
 	return 0;
 }
 
-static int pingvpn_order_set_ctl(struct sock *sk, int cmd, void  *user, unsigned int len)
+static int pingvpn_order_set_ctl(
+#if LINUX_VERSION_CODE < KERNEL_VERSION(5,15,0)
+struct sock *sk, int cmd, void  *user, unsigned int len
+#else
+struct sock *sk, int optval, sockptr_t arg, unsigned int len
+#endif
+)
 {
 	return -EPERM;
 }

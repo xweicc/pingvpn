@@ -2,7 +2,7 @@
 obj-m := pingvpn.o
 
 CONFIG_MODULE_SIG=n
-EXTRA_CFLAGS = -g -O0
+#EXTRA_CFLAGS = -g -O0
 
 CC=gcc
 BULID_PATH=/lib/modules/$(shell uname -r)/build
